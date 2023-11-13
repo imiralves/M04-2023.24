@@ -1,0 +1,12 @@
+p, li{
+    color: rgb(1, 254, 1);
+  }
+
+li {
+   list-style-type: decimal; 
+}  
+
+.specialASIX {
+    color: orange;
+    font-weight: bold;
+}

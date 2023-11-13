@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <title>Exemple Form - </title>
+	</head>
+	<body>
+	<!-- HTTP method POST, data is sent in the content of HTTP msg -->
+	<!-- HTTP method GET (default), data is sent in the URL, visible for everybody -->
+	<!-- enctype="multipart/form-data" only needed if form contains a field 'file' -->
+	
+		<form action="exemple-form_result.php" method="post" enctype="multipart/form-data">
+			<h1>Form Fields</h1>
+			
+			<fieldset>
+				<legend>INPUTS</legend>
+			
+			<h2>text</h2>
+			<p>
+				<label for="id_form_text">Input text:</label>
+				<input type="text" id="id_form_text" name="form_text" value="Default text" />
+			</p>
+         
+			<h2>radio</h2>
+			<p>
+				<label>Click option:</label>
+				<input type="radio" name="form_radio" value="value1_option" checked="checked" />text1 radio
+				<input type="radio" name="form_radio" value="value2_option" />text2 radio
+				<input type="radio" name="form_radio" value="value3_option" />text3 radio
+				<input type="radio" name="form_radio" value="value4_option" />text4 radio
+			</p>
+
+			<h2>checkbox</h2>
+			<p>
+				<label>Click multiple options:</label>
+				<input type="checkbox" name="form_checkbox[]" value="value1_option" checked="checked" />text1 check
+				<input type="checkbox" name="form_checkbox[]" value="value2_option" />text2 check
+				<input type="checkbox" name="form_checkbox[]" value="value3_option" />text3 check
+				<input type="checkbox" name="form_checkbox[]" value="value4_option" />text4 check
+			</p>
+
+			<h2>hidden</h2>
+			<p>
+				<input type="hidden" name="form_hidden" value="hidden text" />
+			</p>
+
+			<h2>password</h2>
+			<p>
+				<label>Input password:</label>
+				<input type="password" name="form_password" />
+			</p>
+			
+			<a href="inputs.html"><b>See more inputs type</b></a>
+			</fieldset>
+		   <fieldset>
+				<legend>SELECT</legend>
+			<h2>select simple</h2>
+			<p>
+				<label>Select option:</label>
+				<select name="form_select">
+					<option value="-" selected="selected">Default text select</option>
+					<option value="value1_select">text1_select</option>
+					<option value="value2_select">text2_select</option>
+					<option value="value3_select">text3_select</option>
+					<option value="value4_select">text4_select</option>
+				</select>
+			</p>			
+
+			<h2>select multiple</h2>
+			<p>
+				<label>Select multiple options:</label>
+				<select multiple="multiple" name="form_multiselect[]">
+					<option value="-" selected="selected">Default text select</option>
+					<option value="value1_select">text1_select</option>
+					<option value="value2_select">text2_select</option>
+					<option value="value3_select">text3_select</option>
+					<option value="value4_select">text4_select</option>
+				</select>
+			</p>
+		   </fieldset>
+		   <fieldset>
+				<legend>TEXTAREA</legend>
+			<h2>textarea</h2>
+			<p>
+				<label>Input text:</label>
+				<textarea name="form_textarea" rows="5" cols="50">Textarea default text...</textarea>
+			</p>
+		   </fieldset>
+		   <fieldset>
+				<legend>FILE</legend>
+			<h2>file</h2>
+			<p>
+				<label>Select file:</label>
+				<input type="file" name="form_file" />
+			</p>
+
+			</fieldset>
+			<fieldset>
+				<legend>BUTTONS</legend>
+
+			<h2>button</h2>
+			<p>
+				<input type="button" name="form_button" value="BUTTON FORM" />
+			<!--	<button type="button" name="form_button" value="BUTTON FORM" />  -->
+			</p>
+
+			<h2>submit</h2>
+			<p>
+				<input type="submit" name="form_submit" value="SUBMIT FORM" />
+			</p>
+
+			<h2>reset</h2>
+			<p>
+				<input type="reset" name="form_reset" value="RESET FORM" />
+			</p>
+
+			</fieldset>
+		</form>	
+	</body>
+</html>

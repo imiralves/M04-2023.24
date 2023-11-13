@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <title>Exemple presentacio </title>
+	</head>
+	<body>
+		<form action="noexiste.html" method="post">
+		<fieldset>
+			<p>
+				<label for="id_nom">Nom:</label>
+				<input type="text" id="id_nom" name="nom" />
+				<label for="id_pwd">Password:</label>
+				<input type="password" id="id_pwd" name="password"/>
+			</p>
+			<p>
+				<label>Torn:</label>
+				<input type="radio" name="form_radio" value="Mati"/>Matí
+				<input type="radio" name="form_radio" value="Tarda" />Tarda
+			</p>
+			<p>
+				<input type="checkbox" name="form_checkbox[]" value="majoredat" />Major d'edat?
+			</p>
+			<p>
+				<label>Select the day you are available:</label>
+				<select name="days[]">
+					<option value="Sunday">Sunday</option>
+					<option value="Saturday">Saturday</option>
+					<option value="Friday">Friday</option>
+					<option value="Thursday">Thursday</option>
+					<option value="Wednesday">Wednesday</option>
+					<option value="Tuesday">Tuesday</option>
+					<option value="Monday">Monday</option>
+				</select>
+			</p>
+			<p>
+				<input type="submit" name="form_submit" value="Enviar" />
+			    <input type="reset" name="form_reset" value="Borrar" />
+		    </p>
+			
+			
+		</fieldset>
+		</form>
+	</body>
+</html>
+	

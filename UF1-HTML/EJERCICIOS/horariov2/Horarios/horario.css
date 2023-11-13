@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+        
+        *{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        td, th, table {
+          border:2.5px solid #000000;
+          border-collapse: collapse;
+          font-size: 18px;
+          background-color: rgba(255, 255, 255, 0.356);
+        }
+        td{
+            padding: 5px 45px; 
+            
+        }
+        th{
+            padding: 5px;
+        }
+
+        a{
+            transition: 0.5s;
+            color: red;
+            text-decoration: none;
+            padding: auto;
+        }
+
+        td:hover{
+            transition: 0.5s;
+            background-color: #ff4f4f38;
+        }
+        body{
+            background-image:url(V29uJRQjnfWdHJX8cmTh9C.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
